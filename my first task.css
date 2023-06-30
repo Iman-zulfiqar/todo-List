@@ -1,0 +1,99 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+body{
+    font-size: larger!important;
+    background: linear-gradient(145deg, rgba(240,10,161,0.6951155462184874) 0%, rgba(160,7,255,1) 60%, rgba(81,0,255,1) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;background-attachment: fixed;
+}
+#card1{
+	padding: 0px; margin-right: 7rem;margin-left: 5rem;
+	min-height: 10rem;max-width: 40rem;margin-bottom: 2rem;
+
+}
+#box{
+    margin-top: 5rem;
+}
+#head1{
+	margin:  0rem;
+
+}
+#card-b ul li{
+   list-style: none;
+   color: #9D2DC3;
+   font-size: small;padding: 1rem 0rem;
+}
+#card2{
+	padding: 0rem;
+	height: 15rem; max-width: 25rem;margin-right: 1rem;margin-bottom: 2rem;
+}
+#cardb{
+	
+	margin-top: 2rem;
+
+}
+
+/* #btn2{
+	width: 6rem; 
+} */
+#btn1
+{
+	height: 3rem;width: 3rem;margin-top: 2rem;
+}
+.fa-xmark{
+	color: red;
+	size: 2rem;
+	border:none;background-color: white;
+}
+#name{
+	height: 2.5rem;border: 2px solid ;
+}
+.editBtn {
+	border: none;background-color: white;margin-right:2rem ;
+  }
+  .delBtn {
+	border: none;margin-right:1rem ;
+	background-color: white;
+  }
+  .updatePopup {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	display: none;z-index: 3;
+  }
+  
+  .updatePopup.active {
+	display: flex;
+  }
+  
+  .updatePopup .overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.293);
+  }
+  
+  .updatePopup .boxPopup {
+	padding: 1rem;
+	border-radius: 2rem;
+	height: 15rem;
+	width: 25rem;
+	position: relative;
+	background: white;  
+  }
+  #name2{
+	margin-top: 2rem;
+  }
+  

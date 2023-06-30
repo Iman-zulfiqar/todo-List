@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my first task</title>
+    <link rel="stylesheet" type="text/css" href="my first task.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+      integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width,initail-scale-1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="updatePopup">
+        <div class="overlay"></div>
+        <div class="boxPopup">
+          <form id="updateForm">
+            <h3>Update Task</h3>
+            <hr />
+            <div class="card-text" id="input" type="submit">
+              <input type="text" id="name2" placeholder="enter a task" />
+              <button class="btn btn-success" type="submit" onclick="">
+                <i
+                  id="icon-size"
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                ></i></button
+              ><span class="alert" id="error"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--list-->
+      <div class="row justify-content-around mx-4" id="box">
+        <div class="card col-sm-9 col-md-5 col-lg-4 mt-4" id="card1">
+          <div
+            class="container card-header row justify-content-between"
+            id="head1"
+          >
+            <h3 class="col-8" id="h">To Do Task</h3>
+            <button type="delete" class="btn btn-danger col-3" onclick="del()">
+              Delete All
+            </button>
+          </div>
+          <div class="card-body" id="card-b">
+            <ul id="box1"></ul>
+          </div>
+        </div>
+        <!--input section-->
+        <div class="card col-sm-6 col-md-4 col-lg-3 mt-4" id="card2">
+          <div class="card-header" id="head2"><h4>Add new task</h4></div>
+          <div class="card-body" id="cardb">
+            <div class="card-text" id="input" type="submit">
+              <input type="text" id="name" placeholder="enter a task" />
+              <button class="btn btn-success" type="submit" id="btn" onclick="">
+                <i
+                  id="icon-size"
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                ></i></button
+              ><span class="alert" id="error"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--js-->
+    <script type="text/javascript" src="my first task-api.js"></script>
+  </body>
+</html>
